@@ -1471,7 +1471,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
     <!-- ── EXPLORE: Step 1 — Industry ── -->
     <div class="flow-screen" id="demo-s1">
       <button class="btn btn-outline" style="font-size:12px;padding:6px 12px;margin-bottom:16px;" id="s1-back">&#8592; Back</button>
-      <div class="step-eyebrow">Explore &middot; Step 1 of 5</div>
+      <div class="step-eyebrow">Explore &middot; Step 1 of 6</div>
       <div class="step-title">Pick your industry</div>
       <div class="step-sub">Choose one. We rank every opportunity in it based on your profile.</div>
       <div class="ind-pick-grid" id="industry-grid"></div>
@@ -1481,7 +1481,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
     <!-- ── EXPLORE: Step 2 — Age ── -->
     <div class="flow-screen" id="demo-s2">
       <button class="btn btn-outline" style="font-size:12px;padding:6px 12px;margin-bottom:16px;" id="s2-back">&#8592; Back</button>
-      <div class="step-eyebrow">Explore &middot; Step 2 of 5</div>
+      <div class="step-eyebrow">Explore &middot; Step 2 of 6</div>
       <div class="step-title">How old are you?</div>
       <div class="step-sub">Age affects your score significantly. Young founders score differently than experienced ones.</div>
       <div class="age-show" id="age-display">26</div>
@@ -1492,7 +1492,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
     <!-- ── EXPLORE: Step 3 — Capital ── -->
     <div class="flow-screen" id="demo-s3">
       <button class="btn btn-outline" style="font-size:12px;padding:6px 12px;margin-bottom:16px;" id="s3-back">&#8592; Back</button>
-      <div class="step-eyebrow">Explore &middot; Step 3 of 5</div>
+      <div class="step-eyebrow">Explore &middot; Step 3 of 6</div>
       <div class="step-title">How much capital do you have?</div>
       <div class="step-sub">This changes which ideas are realistic for you right now.</div>
       <div class="chip-row" id="cap-chips" style="margin-bottom:32px;flex-wrap:wrap;">
@@ -1509,7 +1509,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
     <!-- ── EXPLORE: Step 4 — Experience ── -->
     <div class="flow-screen" id="demo-s4">
       <button class="btn btn-outline" style="font-size:12px;padding:6px 12px;margin-bottom:16px;" id="s4-back">&#8592; Back</button>
-      <div class="step-eyebrow">Explore &middot; Step 4 of 5</div>
+      <div class="step-eyebrow">Explore &middot; Step 4 of 6</div>
       <div class="step-title">Experience in this type of business?</div>
       <div class="step-sub">Honest answer gets you a more accurate score. Adjusts your grade by up to 12 points.</div>
       <div class="chip-row" id="exp-chips" style="margin-bottom:12px;flex-wrap:wrap;">
@@ -1530,7 +1530,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
     <!-- ── EXPLORE: Step 5 — Side hustle or full time ── -->
     <div class="flow-screen" id="demo-s5">
       <button class="btn btn-outline" style="font-size:12px;padding:6px 12px;margin-bottom:16px;" id="s5-back">&#8592; Back</button>
-      <div class="step-eyebrow">Explore &middot; Step 5 of 5</div>
+      <div class="step-eyebrow">Explore &middot; Step 5 of 6</div>
       <div class="step-title">Side hustle or full-time venture?</div>
       <div class="step-sub">This changes which opportunities are realistic for your schedule and risk tolerance.</div>
       <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:28px;">
@@ -1547,7 +1547,53 @@ html, body { max-width: 100%; overflow-x: hidden; }
           <div style="font-size:12px;color:var(--muted);text-align:left;">Building on the side with a plan to transition once it proves itself.</div>
         </button>
       </div>
-      <button class="primary-btn" id="s5-next" disabled>See my results &rarr;</button>
+      <button class="primary-btn" id="s5-next" disabled>Next &rarr;</button>
+    </div>
+
+    <!-- EXPLORE: Step 6 - A few more details -->
+    <div class="flow-screen" id="demo-s6">
+      <button class="btn btn-outline" style="font-size:12px;padding:6px 12px;margin-bottom:16px;" id="s6-back">&#8592; Back</button>
+      <div class="step-eyebrow">Explore &middot; Step 6 of 6</div>
+      <div class="step-title">A few more details</div>
+      <div class="step-sub">All optional. Each answer you give adjusts your scores, and you can skip any you are unsure about.</div>
+      <div style="font-size:13px;font-weight:700;color:var(--ink);margin:18px 0 8px;">Where do you live?</div>
+      <div class="chip-row" style="margin-bottom:4px;flex-wrap:wrap;">
+        <div class="inline-chip" data-key="loc" data-val="urban">City</div>
+        <div class="inline-chip" data-key="loc" data-val="suburb">Suburb</div>
+        <div class="inline-chip" data-key="loc" data-val="rural">Small town or rural</div>
+      </div>
+      <div style="font-size:13px;font-weight:700;color:var(--ink);margin:18px 0 8px;">What are you best at?</div>
+      <div class="chip-row" style="margin-bottom:4px;flex-wrap:wrap;">
+        <div class="inline-chip" data-key="skill" data-val="sales">Sales</div>
+        <div class="inline-chip" data-key="skill" data-val="writing">Writing</div>
+        <div class="inline-chip" data-key="skill" data-val="trade">Hands-on trade</div>
+        <div class="inline-chip" data-key="skill" data-val="tech">Tech</div>
+        <div class="inline-chip" data-key="skill" data-val="creative">Creative or design</div>
+        <div class="inline-chip" data-key="skill" data-val="people">Teaching or coaching</div>
+        <div class="inline-chip" data-key="skill" data-val="numbers">Numbers or finance</div>
+        <div class="inline-chip" data-key="skill" data-val="food">Cooking or food</div>
+      </div>
+      <div style="font-size:13px;font-weight:700;color:var(--ink);margin:18px 0 8px;">How long can you go without income from this?</div>
+      <div class="chip-row" style="margin-bottom:4px;flex-wrap:wrap;">
+        <div class="inline-chip" data-key="runway" data-val="short">Under 3 months</div>
+        <div class="inline-chip" data-key="runway" data-val="mid">3 to 12 months</div>
+        <div class="inline-chip" data-key="runway" data-val="long">A year or more</div>
+      </div>
+      <div style="font-size:13px;font-weight:700;color:var(--ink);margin:18px 0 8px;">Do you want to work solo?</div>
+      <div class="chip-row" style="margin-bottom:4px;flex-wrap:wrap;">
+        <div class="inline-chip" data-key="team" data-val="solo">Just me</div>
+        <div class="inline-chip" data-key="team" data-val="hire">Open to hiring help</div>
+      </div>
+      <div style="font-size:13px;font-weight:700;color:var(--ink);margin:18px 0 8px;">Which kind of business appeals to you most?</div>
+      <div class="chip-row" style="margin-bottom:4px;flex-wrap:wrap;">
+        <div class="inline-chip" data-key="model" data-val="service">Sell my time or skills</div>
+        <div class="inline-chip" data-key="model" data-val="physical">Sell physical products</div>
+        <div class="inline-chip" data-key="model" data-val="digital">Sell digital products or software</div>
+        <div class="inline-chip" data-key="model" data-val="subscription">Recurring subscriptions</div>
+        <div class="inline-chip" data-key="model" data-val="audience">Build an audience</div>
+        <div class="inline-chip" data-key="model" data-val="local">Local, in-person business</div>
+      </div>
+      <button class="primary-btn" id="s6-next" style="margin-top:24px;">See my results &rarr;</button>
     </div>
 
     <!-- ── EXPLORE: Results ── -->
@@ -2042,7 +2088,7 @@ var GOALS_DATA = [
 var CAP_VAL = {'0':0,'500':500,'1000':1000,'5000':5000,'10000':10000,'10001':15000};
 var FREE_LIMIT = 1;
 var EMAIL_ENDPOINT = '';
-var S = { ind:null, cap:null, exp:'some', hrs:'20', age:26, goal:null, flow:null, history:[], hustle:'side' };
+var S = { ind:null, cap:null, exp:'some', hrs:'20', age:26, goal:null, flow:null, history:[], hustle:'side', loc:null, skill:null, runway:null, team:null, model:null };
 
 function getDefault(ind){
   var industryIdeas = {
@@ -2221,6 +2267,65 @@ function recordReport(){ var u=getUsage(); u.n=(u.n||0)+1; saveUsage(u); }
 function saveEmail(e){ var u=getUsage(); u.e=e; saveUsage(u); }
 
 // ── SCORING ──
+// EXTRA PROFILE TAGS
+var TAG_RX = {
+  model: {
+    service: /consult|coach|freelanc|agency|bookkeeping|\btax\b|tutor|specialist|practice|virtual assist|copywriting|fractional|assistance|lessons|photograph|production|done-for-you|setup|advis|manage|coordinat|organiz|writing|design|training|workshop|broker|wholesal|literacy|preparation|protocol|labeling|simulation/i,
+    physical: /resell|resale|e-commerce|ecommerce|dropship|handmade|merch|inventory|manufactur|\bprint|sewing|candle|jewelry|subscription box|secondhand|vintage|food|vending|cater|meal|bak(e|ing)|snack|sauce|wholesale|retail|boutique|farmers market|product\b/i,
+    digital: /course|template|software|saas|\bapp\b|digital|ebook|online program|platform|automation|no-code|\bapi\b|online store/i,
+    subscription: /subscription|recurring|membership|retainer|monthly/i,
+    audience: /content|newsletter|podcast|youtube|influencer|creator|\bblog|audience|community|sponsor/i,
+    local: /lawn|cleaning|\bclean\b|detail|junk|moving|handyman|repair|mobile |grooming|pet sit|dog walk|window|pressure|landscap|in-person|driveway|remodel|staging|salon|vending|lessons|errand/i
+  },
+  skill: {
+    sales: /\bsales|outreach|lead gen|recruit|broker|\bagent\b|pitch|prospect|closing|cold email|marketing|\bcmo\b|advertis/i,
+    writing: /writ|copy|content|newsletter|blog|grant|editing|editor|ghost/i,
+    trade: /lawn|clean|repair|handyman|install|detail|plumb|electric|hvac|carpent|paint|junk|pressure|landscap|groom|moving|fleet|truck|trailer|mechanic|woodwork|sewing|welding|remodel|renovat|stag(e|ing)|vending|3d print/i,
+    tech: /software|saas|\bapp\b|automation|\bcode\b|no-code|developer|\bdata\b|\bweb\b|\bapi\b|cyber|\bai\b|analytics|dashboard|online store|dropship|e-commerce|ecommerce/i,
+    creative: /design|photograph|video|brand|visual|\bart\b|music|\bdj\b|fashion|craft|film|illustrat|jewelry|candle|creative|lash|brow|beauty|decor/i,
+    people: /coach|tutor|training|\bcare\b|counsel|teach|wellness|fitness|trainer|event|hospitality|childcare|senior|nanny|therap|mentor|workshop|class\b|lessons|immigration|assistance/i,
+    numbers: /bookkeep|\btax\b|account|financ|payroll|audit|invoice|budget|\bcfo\b|arbitrage|resell|resale/i,
+    food: /food|meal|cater|bak(e|ing)|cook|chef|snack|sauce|kitchen|restaurant|farmers market|vending/i
+  },
+  team: /\bteam\b|\bstaff|\bcrew\b|employee|\bhire\b|hiring|subcontract|contractors|fleet|drivers|cleaners|technicians|salon|\bstudio\b|storefront|restaurant|franchise|remodel|vending/i
+};
+function ideaTags(idea){
+  var txt = (idea.title||'')+' '+(idea.desc||'');
+  var out = { model:{}, skill:{}, team:false, slow:/month/i.test(idea.timeToRev||'') };
+  for(var k in TAG_RX.model) out.model[k] = TAG_RX.model[k].test(txt);
+  for(var s in TAG_RX.skill) out.skill[s] = TAG_RX.skill[s].test(txt);
+  out.team = TAG_RX.team.test(txt);
+  return out;
+}
+function extraAdjust(idea){
+  var t = ideaTags(idea), out = [];
+  function add(p, why){ out.push({pts:p, why:why}); }
+  if(S.model){
+    if(t.model[S.model]) add(8, 'Business model: this matches the kind of business you want to run');
+    else add(-3, 'Business model: this is not the kind of business you said you want');
+  }
+  if(S.skill && t.skill[S.skill]) add(6, 'Skill match: this uses what you are good at');
+  if(S.loc && t.model.local){
+    if(S.loc==='rural') add(-6, 'Location: fewer nearby customers for a local, in-person business');
+    else add(3, 'Location: more nearby customers for a local, in-person business');
+  }
+  if(S.runway==='short'){
+    if(t.slow) add(-10, 'Runway: this can take months to earn and your cushion is under 3 months');
+    else add(3, 'Runway: this can earn within weeks, which fits a short cushion');
+  } else if(S.runway==='long' && t.slow){
+    add(3, 'Runway: a long cushion gives a slower business room to grow');
+  }
+  if(S.team==='solo' && t.team) add(-8, 'Team: this usually needs help or staff and you want to work solo');
+  else if(S.team==='hire' && t.team) add(3, 'Team: you are open to the hiring this model needs');
+  return out;
+}
+function extraFactorsHtml(idea){
+  return extraAdjust(idea).map(function(a){
+    var good = a.pts > 0;
+    return '<div style="font-size:11px;color:var(--'+(good?'go':'nogo')+');display:flex;gap:6px;"><span>'+(good?'+':'-')+'</span><span>'+a.why+' ('+(good?'+':'')+a.pts+' pts)</span></div>';
+  }).join('');
+}
+
 function personalize(base, idea) {
   var sc = base;
   var age = S.age||26;
@@ -2240,6 +2345,7 @@ function personalize(base, idea) {
   // Adjust for hustle type
   if(S.hustle==='full'&&idea.timeTier==='full') sc+=5;
   if(S.hustle==='side'&&idea.timeTier==='full') sc-=8;
+  extraAdjust(idea).forEach(function(a){ sc += a.pts; });
   return Math.min(88, Math.max(18, Math.round(sc)));
 }
 function getGrade(sc){ if(sc>=75)return{g:'A',cls:'grade-A'}; if(sc>=65)return{g:'B',cls:'grade-B'}; if(sc>=50)return{g:'C',cls:'grade-C'}; return{g:'D',cls:'grade-D'}; }
@@ -2249,6 +2355,7 @@ function getVerdict(sc){ if(sc>=65)return{v:'GO',cls:'v-go',tcls:'v-go-text'}; i
 function openApp() {
   // Reset state
   S.ind=null; S.goal=null; S.flow=null;
+  S.loc=null; S.skill=null; S.runway=null; S.team=null; S.model=null;
   // Load saved profile or use defaults
   var savedProfile = getProfile();
   if(savedProfile){
@@ -2690,6 +2797,7 @@ function openReport(idx) {
     (idea.timeTier==='full'&&parseInt(S.hrs||20)<20?'<div style="font-size:11px;color:var(--nogo);display:flex;gap:6px;"><span>-</span><span>Time mismatch: This needs full-time hours and you have under 20/week (-14 pts)</span></div>':'')+
     (S.hustle==='side'&&idea.timeTier==='full'?'<div style="font-size:11px;color:var(--nogo);display:flex;gap:6px;"><span>-</span><span>Side hustle risk: A full-time business model as a side hustle is hard to compete in (-8 pts)</span></div>':'')+
     (S.hustle==='full'&&idea.timeTier==='full'?'<div style="font-size:11px;color:var(--go);display:flex;gap:6px;"><span>+</span><span>Fully committed: Going all-in on a full-time model is the right fit (+5 pts)</span></div>':'')+
+    extraFactorsHtml(idea)+
     '</div></div>'+
     '</div>'+
     capNote+
@@ -3329,7 +3437,9 @@ document.addEventListener('DOMContentLoaded', function(){
   wire('s3-next', function(){ goStep('demo-s4'); });
   wire('s4-next', function(){ goStep('demo-s5'); });
   wire('s5-back', function(){ goStep('demo-s4'); });
-  wire('s5-next', function(){ goStep('demo-result'); });
+  wire('s5-next', function(){ goStep('demo-s6'); });
+  wire('s6-back', function(){ goStep('demo-s5'); });
+  wire('s6-next', function(){ goStep('demo-result'); });
 
   // Hustle buttons
   function selectHustle(type, btnId) {
